@@ -1,0 +1,86 @@
+# Unmask Configuration File
+# Конфигурационный файл Unmask
+
+# === ОСНОВНЫЕ ЗАЩИТЫ ===
+AntiTamper=true
+AntiDump=true
+AntiDebug=true
+AntiDe4Dot=true
+Watermarks=true
+
+# === ПОТОК УПРАВЛЕНИЯ ===
+JumpControlFlow=true
+ControlFlow=true
+
+# === ПРОКСИ МЕТОДЫ ===
+ProxyConstants=true
+ProxyStrings=true
+ProxyMethods=true
+
+# === МАТЕМАТИЧЕСКИЕ ОБФУСКАЦИИ ===
+IntConfusion=true
+Arithmetic=true
+
+# === СТРОКИ ===
+EncryptedStrings=true
+OnlineStringDecryption=false
+
+# === РЕСУРСЫ ===
+ResourceEncryption=true
+ResourceProtections=true
+
+# === РАЗНОЕ ===
+StackUnfConfusion=true
+Callis=true
+InvalidMetadata=true
+LocalField=true
+Renamer=true
+
+# === ПРОДВИНУТЫЕ ФУНКЦИИ ===
+VirtualMachines=true
+DataStructureRecovery=true
+JunkCodeRemoval=true
+
+# === СИСТЕМА СКРИПТИНГА ===
+ScriptingEngine=true
+ScriptingEnabled=true
+ScriptDirectory=Scripts
+AutoLoadScripts=true
+EnableBuiltInScripts=true
+EnableUserScripts=true
+
+# === НАСТРОЙКИ СКРИПТОВ ===
+# Список скриптов для автозагрузки (разделенные запятыми)
+AutoLoadScriptList=BasicDeobfuscation,StringDecryption,MetadataRepair
+
+# Максимальное время выполнения скрипта (в секундах)
+ScriptTimeout=300
+
+# Включить отладочный вывод скриптов
+ScriptDebugOutput=true
+
+# Разрешить компиляцию пользовательских скриптов
+AllowScriptCompilation=true
+
+# === НАСТРОЙКИ ИНТЕРФЕЙСА ===
+Theme=Dark
+Language=Russian
+AutoSave=true
+ShowAdvancedOptions=true
+
+# === НАСТРОЙКИ ПРОИЗВОДИТЕЛЬНОСТИ ===
+UseMultiThreading=true
+MaxThreads=4
+EnableCaching=true
+OptimizeMemoryUsage=true
+
+# === НАСТРОЙКИ ЛОГИРОВАНИЯ ===
+EnableLogging=true
+LogLevel=Info
+LogToFile=true
+LogFileName=unmask.log
+
+# === НАСТРОЙКИ БЕЗОПАСНОСТИ ===
+ValidateInputFiles=true
+CreateBackups=true
+SandboxScripts=true 

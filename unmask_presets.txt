@@ -1,0 +1,35 @@
+[AntiProtection]
+AntiTamperException = System.BadImageFormatException
+AntiDumpMarshal = System.Runtime.InteropServices.Marshal.GetHINSTANCE
+AntiDebugAttached = System.Diagnostics.Debugger.get_IsAttached
+VMDetectionSignatures = VM_SIGNATURE_1,VM_SIGNATURE_2
+
+[Watermarks]
+WatermarkSignature = obfuscator.signature
+ObfuscatorSignatures = Confuser,ConfuserEx,Eazfuscator,Generic
+
+[Mathematics]
+IntConfusionDefault = 1.5707963267949
+MathClass = System.Math
+
+[Proxies]
+ProxyCommonName = ProxyMeth
+
+[StringEncryption]
+OnlineDecryptionURL = https://communitykeyv1.000webhostapp.com/Decoder4.php?string=
+StringPasswordHash = p7K95451qB88sZ7J
+StringSalt = MkdNMjNqMzAxdDYwWjk2VA==
+StringIV = SXpUZGhHNlM4dXdnMTQxUw==
+EncryptionAlgorithms = AES,DES,RC4
+
+[ControlFlow]
+ControlFlowPatterns = switch_,case_,default_,goto_,label_
+
+[Renamer]
+RenamerPatterns = Class,Method,Field,Property,Event,Namespace
+
+[ResourceProtection]
+ResourceProtectionSignatures = encrypted_,protected_,obfuscated_,hidden_
+
+[ProxyMethods]
+ProxyMethodPatterns = Invoke_,Call_,Execute_,Run_,Process_ 
