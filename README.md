@@ -57,4 +57,4 @@ Unmask is a powerful tool for deobfuscating .NET assemblies, capable of handling
 
 ### Running the GUI version
 ```bash
-run_gui.bat
+"Unmask\bin\Release\net472\Unmask.exe"
