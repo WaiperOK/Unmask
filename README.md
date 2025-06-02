@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="logo.png" alt="Unmask Logo" width="400"/>
+</p>
+
 # Unmask - Advanced .NET Deobfuscator
 
 ## Description
