@@ -1,43 +1,37 @@
-Console.WriteLine("Starting default deobfuscation...");
+using System;
+using dnlib.DotNet;
+using dnlib.DotNet.Emit;
+using Unmask;
 
-var emptyMethods = new List<MethodDef>();
-foreach (var type in module.Types)
+namespace CustomScripts
 {
-    foreach (var method in type.Methods)
+    /// <summary>
+    /// Скрипт деобфускации по умолчанию
+    /// </summary>
+    public class DefaultDeobfuscationScript : IDeobfuscationScript
     {
-        if (method.Body?.Instructions?.Count == 1 && 
-            method.Body.Instructions[0].OpCode == OpCodes.Ret)
+        public string Name => "DefaultDeobfuscation";
+        public string Description => "Стандартная деобфускация с базовыми операциями";
+        public string Version => "1.0";
+
+        public void Execute(ModuleDefMD module, IScriptLogger logger)
         {
-            emptyMethods.Add(method);
+            logger.Info("Запуск стандартной деобфускации...");
+            
+            // Выполняем базовые операции деобфускации
+            var basicScript = new BasicDeobfuscationScript();
+            basicScript.Execute(module, logger);
+            
+            var stringScript = new StringDecryptionScript();
+            stringScript.Execute(module, logger);
+            
+            var controlFlowScript = new ControlFlowRecoveryScript();
+            controlFlowScript.Execute(module, logger);
+            
+            var metadataScript = new MetadataRepairScript();
+            metadataScript.Execute(module, logger);
+            
+            logger.Success("Стандартная деобфускация завершена");
         }
     }
-}
-
-foreach (var method in emptyMethods)
-{
-    method.DeclaringType.Methods.Remove(method);
-}
-
-Console.WriteLine($"Removed {emptyMethods.Count} empty methods");
-
-foreach (var type in module.Types)
-{
-    foreach (var method in type.Methods)
-    {
-        if (method.Body?.Instructions == null) continue;
-        
-        for (int i = 0; i < method.Body.Instructions.Count; i++)
-        {
-            var instruction = method.Body.Instructions[i];
-            if (instruction.OpCode == OpCodes.Ldstr && 
-                instruction.Operand is string str && 
-                str.StartsWith("encrypted_"))
-            {
-                var decrypted = str.Replace("encrypted_", "");
-                instruction.Operand = decrypted;
-            }
-        }
-    }
-}
-
-Console.WriteLine("Default deobfuscation completed"); 
+} 

@@ -6,6 +6,7 @@ using System.Reflection;
 using System.CodeDom.Compiler;
 using Microsoft.CSharp;
 using dnlib.DotNet;
+using dnlib.DotNet.Emit;
 
 namespace Unmask
 {
@@ -416,7 +417,9 @@ public class DefaultDeobfuscation : IDeobfuscationScript
         {
             try
             {
-                var provider = new CSharpCodeProvider();
+                // Используем Roslyn для компиляции
+                var options = new Dictionary<string, string> {{ "CompilerVersion", "v4.0" }};
+                var provider = CodeDomProvider.CreateProvider("CSharp", options);
                 var parameters = new CompilerParameters
                 {
                     GenerateInMemory = true,
@@ -427,7 +430,19 @@ public class DefaultDeobfuscation : IDeobfuscationScript
                 // Добавляем необходимые ссылки
                 parameters.ReferencedAssemblies.Add("System.dll");
                 parameters.ReferencedAssemblies.Add("System.Core.dll");
-                parameters.ReferencedAssemblies.Add("dnlib.dll");
+                parameters.ReferencedAssemblies.Add("System.Windows.Forms.dll");
+                
+                // Добавляем dnlib
+                var dnlibPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dnlib.dll");
+                if (File.Exists(dnlibPath))
+                {
+                    parameters.ReferencedAssemblies.Add(dnlibPath);
+                }
+                else
+                {
+                    parameters.ReferencedAssemblies.Add("dnlib.dll");
+                }
+                
                 parameters.ReferencedAssemblies.Add(Assembly.GetExecutingAssembly().Location);
 
                 var results = provider.CompileAssemblyFromSource(parameters, sourceCode);

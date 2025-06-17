@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Remove="Application.cs" />
     <Compile Remove="UI\**" />
+    <Compile Remove="TestObfuscated.cs" />
+    <Compile Remove="TestObfuscated_AssemblyInfo.cs" />
   </ItemGroup>
 
 </Project> 

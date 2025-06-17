@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>TestObfuscatedApp</RootNamespace>
+    <AssemblyName>TestObfuscated</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application.cs" />
+    <Compile Remove="ConsoleApplication.cs" />
+    <Compile Remove="Core\**" />
+    <Compile Remove="UI\**" />
+    <Compile Remove="Scripts\**" />
+    <Compile Remove="Properties\**" />
+    <None Remove="Core\**" />
+    <None Remove="UI\**" />
+    <None Remove="Scripts\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="TestObfuscated.cs" />
+    <Compile Include="TestObfuscated_AssemblyInfo.cs" />
+  </ItemGroup>
+
+</Project> 

@@ -1,0 +1,12 @@
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\Unmask.exe.config
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\Unmask.exe
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\Unmask.pdb
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\dnlib.dll
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.csproj.AssemblyReference.cache
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.exe.config
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.csproj.CoreCompileInputs.cache
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.sourcelink.json
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.csproj.Up2Date
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.exe
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\Unmask.pdb

@@ -1,0 +1,11 @@
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\TestSimpleObfuscated.exe.config
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\TestSimpleObfuscated.exe
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\bin\Release\net472\TestSimpleObfuscated.pdb
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.csproj.AssemblyReference.cache
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.AssemblyInfoInputs.cache
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.AssemblyInfo.cs
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.csproj.CoreCompileInputs.cache
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.sourcelink.json
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.exe
+C:\Users\Wrzesien\Desktop\Programs\miso\Unmask\Unmask\obj\Release\net472\TestSimpleObfuscated.pdb
