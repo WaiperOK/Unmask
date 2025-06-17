@@ -1,9 +1,5 @@
 # Unmask - Профессиональный .NET Деобфускатор
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-blue.svg)
-![Version](https://img.shields.io/badge/version-2.0.0-green.svg)
-
 Unmask - это мощный деобфускатор для .NET приложений с поддержкой пользовательских скриптов и современным графическим интерфейсом.
 
 ## ✨ Основные возможности
