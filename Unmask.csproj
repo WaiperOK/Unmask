@@ -32,6 +32,9 @@
     <Compile Remove="Scripts\**" />
     <EmbeddedResource Remove="Scripts\**" />
     <None Remove="Scripts\**" />
+    <Compile Remove="TestObfuscated.cs" />
+    <Compile Remove="TestSimpleObfuscated.cs" />
+    <Compile Remove="test_simple.cs" />
   </ItemGroup>
 
 </Project> 

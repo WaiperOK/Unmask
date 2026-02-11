@@ -37,10 +37,16 @@ Unmask - это мощный деобфускатор для .NET приложе
 # Компиляция всех версий
 build_all.bat
 
-# Или вручную
+# Или вручную (через solution)
+dotnet build Unmask.sln --configuration Release
+
+# Или вручную (конкретные проекты)
 dotnet build Unmask.csproj --configuration Release
 dotnet build Unmask.Console.csproj --configuration Release
 ```
+
+> Если вы запускаете `dotnet build` из корня репозитория, укажите `.sln` или `.csproj`,
+> иначе MSBuild может вернуть ошибку выбора проекта.
 
 ### Запуск GUI версии
 ```batch

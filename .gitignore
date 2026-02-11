@@ -1,0 +1,10 @@
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# local tooling artifacts
+unmask.log
+-output
+-strings
